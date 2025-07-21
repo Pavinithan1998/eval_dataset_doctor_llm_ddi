@@ -70,4 +70,4 @@ if st.button("✅ Save & Next"):
     st.success("Saved to Supabase!")
 
     st.session_state.index += 1
-    st.experimental_rerun()
+    st.rerun()
