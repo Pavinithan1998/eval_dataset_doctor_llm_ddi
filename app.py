@@ -3,8 +3,8 @@ import json
 import random
 from supabase import create_client, Client
 
-SUPABASE_URL = st.secrets["SUPABASE_URL"]
-SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
+SUPABASE_URL = "https://fektbbejaujrmedfltvp.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZla3RiYmVqYXVqcm1lZGZsdHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMwNjg3NzIsImV4cCI6MjA2ODY0NDc3Mn0.02SrZX0x_ZWTa0_stwWRwrAbJy7pTLgNGTu8svpXSVs"
 
 
 TABLE_NAME = "doctor_evaluations"
