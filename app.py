@@ -3,9 +3,10 @@ import json
 import random
 from supabase import create_client, Client
 
-# CONFIG
-SUPABASE_URL = "https://yourproject.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZla3RiYmVqYXVqcm1lZGZsdHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMwNjg3NzIsImV4cCI6MjA2ODY0NDc3Mn0.02SrZX0x_ZWTa0_stwWRwrAbJy7pTLgNGTu8svpXSVs"
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
+
+
 TABLE_NAME = "doctor_evaluations"
 DATA_FILE = "01_cleaned.jsonl"
 NUM_SAMPLES = 200
